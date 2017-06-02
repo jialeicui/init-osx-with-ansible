@@ -1,0 +1,32 @@
+---
+- find:
+    paths: "{{ role_path }}/files/homedir"
+    file_type: any
+    patterns: "*"
+    hidden: True
+  register: dotfiles
+
+- name: copy to home dir
+  copy:
+    src: "{{ item.path }}"
+    dest: "~/"
+  with_items: "{{ dotfiles.files }}"
+
+- name: copy to preferences
+  copy:
+    src: "{{ item }}"
+    dest: "~/Library/Preferences"
+  with_fileglob:
+    - "preferences/*"
+
+- find:
+    paths: "{{ role_path }}/files/application-support"
+    file_type: any
+    patterns: "*"
+  register: applicationsupportfiles
+
+- name: copy to Application Support
+  synchronize:
+    src: "{{ item.path }}"
+    dest: "~/Library/Application Support"
+  with_items: "{{ applicationsupportfiles.files }}"

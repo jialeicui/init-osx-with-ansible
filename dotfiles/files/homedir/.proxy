@@ -1,0 +1,18 @@
+
+PROXY="http://127.0.0.1:1087"
+
+function setproxy
+{
+    http_proxy=$PROXY
+    https_proxy=$PROXY
+    all_proxy=$PROXY
+    no_proxy="localhost,127.0.0.1"
+    export http_proxy https_proxy all_proxy no_proxy
+}
+
+function unsetproxy
+{
+    unset http_proxy https_proxy all_proxy no_proxy
+}
+
+setproxy

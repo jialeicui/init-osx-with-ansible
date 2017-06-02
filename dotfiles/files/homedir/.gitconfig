@@ -1,0 +1,9 @@
+# This is Git's per-user configuration file.
+[user]
+# Please adapt and uncomment the following lines:
+name = Jialei
+email = jialeicui@126.com
+
+[alias]
+lg = log --graph --pretty=format:'%Cred%h%Creset - %s %Cgreen(%cr)%Creset %C(yellow)%d%Creset' --abbrev-commit --date=relative
+

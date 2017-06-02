@@ -1,0 +1,5 @@
+---
+- name: run setting scripts
+  shell: ./osx-conf.sh
+  args:
+    chdir: "{{ role_path }}/files/"

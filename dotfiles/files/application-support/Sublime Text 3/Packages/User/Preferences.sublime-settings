@@ -1,0 +1,69 @@
+{
+	"always_show_minimap_viewport": true,
+	"binary_file_patterns":
+	[
+		"generated/*",
+		"*.tbz2",
+		"*.gzip",
+		"*.jpg",
+		"*.jpeg",
+		"*.png",
+		"*.gif",
+		"*.ttf",
+		"*.tga",
+		"*.dds",
+		"*.ico",
+		"*.eot",
+		"*.pdf",
+		"*.swf",
+		"*.jar",
+		"*.zip"
+	],
+	"draw_minimap_border": true,
+	"file_exclude_patterns":
+	[
+		"*.pyc",
+		"*.pyo",
+		"*.exe",
+		"*.dll",
+		"*.obj",
+		"*.o",
+		"*.a",
+		"*.lib",
+		"*.so",
+		"*.dylib",
+		"*.ncb",
+		"*.sdf",
+		"*.suo",
+		"*.pdb",
+		"*.idb",
+		".DS_Store",
+		"*.class",
+		"*.psd",
+		"*.db",
+		"*.sublime-workspace"
+	],
+	"folder_exclude_patterns":
+	[
+		"node_modules",
+		".svn",
+		".git",
+		".hg",
+		"CVS",
+		"public",
+		"storage",
+		".idea"
+	],
+	"font_face": "source code pro light",
+	"font_size": 13,
+	"highlight_modified_tabs": true,
+	"ignored_packages":
+	[
+		"Phpcs",
+		"Vintage"
+	],
+	"show_tab_close_buttons": false,
+	"tab_size": 4,
+	"translate_tabs_to_spaces": true,
+	"word_wrap": true
+}

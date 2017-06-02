@@ -1,0 +1,24 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"Alignment",
+		"ApacheConf.tmLanguage",
+		"Babel",
+		"HTML-CSS-JS Prettify",
+		"iCalendar",
+		"INI",
+		"LESS",
+		"Logstash Syntax Highlighting",
+		"nginx",
+		"Package Control",
+		"PackageResourceViewer",
+		"Phpcs",
+		"Pretty JSON",
+		"TypeScript",
+		"VBScript"
+	]
+}

@@ -3,9 +3,11 @@
   connection: local
 
   vars_files:
-     - config.yml
+    - config.yml
     
   roles:
-          # - ohmyzsh
-     - tools
-     - fonts
+    - ohmyzsh
+    - tools
+    - fonts
+    - dotfiles
+    - systemconf
