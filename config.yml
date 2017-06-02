@@ -1,0 +1,31 @@
+---
+- brew_taps:
+    - homebrew/php  # composer
+    - caskroom/cask
+    - homebrew/core
+
+- brew_install:
+    - jq
+    - htop
+    - coreutils
+    - composer
+    - wget
+    - vim
+    - tmux
+    - npm
+    - ssh-copy-id
+
+- brew_cask_apps:
+    - google-chrome
+    - iina # 播放器
+    - sublime-text
+    - sequel-pro  # mysql ui
+    - iterm2
+    - appcleaner
+    - shadowsocksx-ng
+    - phpstorm
+    - wireshark
+    - typora
+    - pycharm
+    - visual-studio-code
+    - baiduinput # 这个需要手动安装  /usr/local/Caskroom/baiduinput/latest/安装百度输入法.app

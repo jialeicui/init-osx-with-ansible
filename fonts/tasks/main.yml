@@ -1,0 +1,18 @@
+---
+- name: clone
+  git:
+    repo=https://github.com/powerline/fonts
+    dest={{ clone_dest }}
+    accept_hostkey=yes
+  register: clone_done
+
+- name: install
+  shell: ./install.sh
+  args:
+    chdir: "{{ clone_dest }}"
+  when: clone_done|success
+
+- name: clean
+  file:
+    state: absent
+    path: "{{ clone_dest }}"

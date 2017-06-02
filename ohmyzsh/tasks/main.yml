@@ -1,0 +1,18 @@
+---
+- find:
+    paths: "{{ ansible_env.HOME }}"
+    file_type: "any"
+    patterns: ".zsh*,.oh-my-zsh"
+    hidden: True
+  register: zshconfig
+
+  #- debug: var=zshconfig.files
+
+- name: remove existing
+  file:
+    path: "{{ item.path }}"
+    state: absent
+  with_items: "{{ zshconfig.files }}"
+
+- name: install 
+  shell: sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
