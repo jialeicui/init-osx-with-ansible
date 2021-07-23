@@ -1,9 +1,4 @@
 ---
-- brew_taps:
-    - homebrew/php  # composer
-    - caskroom/cask
-    - homebrew/core
-
 - brew_install:
     - jq
     - htop
